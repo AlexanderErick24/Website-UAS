@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
+:root{
+    --bg-color: #080808 ;
+    --second-bg-color: #1b0000;
+    --text-color:white;
+    --main-color: red;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 4rem 12% 4rem;
+    background: rgba(0,0,0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);  
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+section{
+    min-width: 100vh;
+    padding: 10rem 12% 10rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+}
+span{ 
+    color: var(--main-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+
+.heropage{
+   position: absolute;
+   color:white;
+   margin-top: 50px;
+   margin-left: 100px;
+   margin-right: 800px;
+}
+.inside-heropage{
+    line-height:2;
+}
+.inside-heropage h1{
+    font-size: 40px;
+}
+.inside-heropage p{
+    font-size: 17px;
+}
+.Stream{
+    font-size: 2rem;
+    color:var(--main-color);
+    font-weight: bold;
+}
+.line1{
+height: 2px;
+background-color:var(--main-color);
+width: 40%;
+margin-left: 0px;
+margin-top: 0px;
+position: absolute;
+}
+.subtitle {
+    display: block;
+    margin-top: -0.5em; 
+}
+
+.btn1{
+    margin-top: 30px;
+}
+.btn1 a{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 25px var(--main-color);
+    font-size: 1.5rem;
+}
+.btn1 a:hover{
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.poster{
+    margin-top: 150px;
+    margin-right: 0px;
+    position: relative;
+}
+.poster iframe{
+    height:320px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
