@@ -58,7 +58,7 @@ function kocokKartu() {
     setTimeout(() => {
         kotaks.forEach((kotak, i) => {
         let gambar = kotak.querySelector(".jawaban img");
-        gambar.src = `assets/chibi${array[i]}.png`;
+        gambar.src = `chibi${array[i]}.png`;
         kotak.addEventListener("click", flip);
     }); 
     }, 1000);
